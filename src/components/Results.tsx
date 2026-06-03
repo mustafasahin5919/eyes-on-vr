@@ -73,10 +73,10 @@ function StatBadge({ label, value, color }: StatBadgeProps) {
 }
 
 const confusionMatrix = [
-  { label: 'TN', value: 59576, color: 'bg-cyan-500/20 text-cyan-300', border: 'border-cyan-500/20' },
-  { label: 'FP', value: 7474, color: 'bg-red-500/20 text-red-300', border: 'border-red-500/20' },
-  { label: 'FN', value: 21956, color: 'bg-orange-500/20 text-orange-300', border: 'border-orange-500/20' },
-  { label: 'TP', value: 28529, color: 'bg-green-500/20 text-green-300', border: 'border-green-500/20' },
+  { label: 'TN', value: 11379, color: 'bg-cyan-500/20 text-cyan-300', border: 'border-cyan-500/20' },
+  { label: 'FP', value: 4275, color: 'bg-red-500/20 text-red-300', border: 'border-red-500/20' },
+  { label: 'FN', value: 2252, color: 'bg-orange-500/20 text-orange-300', border: 'border-orange-500/20' },
+  { label: 'TP', value: 3305, color: 'bg-green-500/20 text-green-300', border: 'border-green-500/20' },
 ];
 
 export default function Results() {
@@ -99,7 +99,7 @@ export default function Results() {
             Results & <span className="gradient-text">Metrics</span>
           </h2>
           <p className="text-slate-400 mt-4 max-w-xl mx-auto text-sm sm:text-base">
-            S5: Global Baseline — 70-15-15 File-Based Random Split. Model performance on held-out test set.
+          Model performance on held-out test subjects.
           </p>
           <div className="w-16 h-px bg-gradient-to-r from-transparent via-cyan-400 to-transparent mx-auto mt-6" />
         </motion.div>
@@ -125,10 +125,10 @@ export default function Results() {
             <div className="glass rounded-2xl p-6 border border-white/5">
               <h3 className="text-slate-300 text-sm font-medium mb-6 text-center">Model Performance on Test Set</h3>
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
-                <CircularMetric label="Accuracy" value={74.96} displayValue="74.96%" color="#22d3ee" trackColor="rgba(34,211,238,0.15)" delay={0} />
-                <CircularMetric label="Precision" value={79.24} displayValue="79.24%" color="#818cf8" trackColor="rgba(129,140,248,0.15)" delay={0.1} />
-                <CircularMetric label="Recall" value={56.51} displayValue="56.51%" color="#22d3ee" trackColor="rgba(34,211,238,0.15)" delay={0.2} />
-                <CircularMetric label="F1 Score" value={65.97} displayValue="65.97%" color="#818cf8" trackColor="rgba(129,140,248,0.15)" delay={0.3} />
+                <CircularMetric label="Accuracy" value={71.00} displayValue="71.00%" color="#22d3ee" trackColor="rgba(34,211,238,0.15)" delay={0} />
+                <CircularMetric label="Precision" value={73.24} displayValue="73.24%" color="#818cf8" trackColor="rgba(129,140,248,0.15)" delay={0.1} />
+                <CircularMetric label="Recall" value={69.51} displayValue="69.51%" color="#22d3ee" trackColor="rgba(34,211,238,0.15)" delay={0.2} />
+                <CircularMetric label="F1 Score" value={70.50} displayValue="70.50%" color="#818cf8" trackColor="rgba(129,140,248,0.15)" delay={0.3} />
               </div>
             </div>
 
@@ -222,9 +222,6 @@ export default function Results() {
           transition={{ duration: 0.8, delay: 0.3 }}
           className="mt-10 text-center"
         >
-          <p className="text-slate-500 text-xs">
-            Results based on S5: Global Baseline configuration · 70-15-15 File-Based Random Split · LSTM(256) + Dropout(0.5) + GlobalAvgPool + BatchNorm + FC(64)
-          </p>
         </motion.div>
       </div>
     </section>

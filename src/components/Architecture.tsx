@@ -4,7 +4,7 @@ import { ArrowDown } from 'lucide-react';
 const layers = [
   {
     label: 'INPUT LAYER',
-    sublabel: '24 Features',
+    sublabel: '73 Features',
     desc: 'Eye-tracking biometric features: pupil size, blink rate, optical flow, saccade velocity',
     color: 'cyan',
     nodes: 5,
@@ -12,35 +12,35 @@ const layers = [
     width: 'w-48',
   },
   {
-    label: 'LSTM LAYER',
-    sublabel: '256 Units',
+    label: 'CONV1D LAYER',
+    sublabel: '64 Filters',
     desc: 'Long Short-Term Memory cells capturing temporal dependencies in sequential eye movement data',
-    color: 'indigo',
-    nodes: 6,
-    nodeColor: 'bg-indigo-400',
+    color: 'slate',
+    nodes: 5,
+    nodeColor: 'bg-slate-400',
     width: 'w-56',
   },
   {
-    label: 'DROPOUT',
-    sublabel: 'Rate: 0.5',
+    label: 'CONV1D LAYER',
+    sublabel: '64 Filters',
     desc: 'Regularization layer preventing overfitting by randomly deactivating 50% of neurons during training',
     color: 'slate',
-    nodes: 4,
+    nodes: 3,
     nodeColor: 'bg-slate-400',
     width: 'w-40',
   },
   {
-    label: 'GLOBAL AVG. POOLING',
-    sublabel: 'Temporal Aggregation',
+    label: 'BiLSTM LAYER',
+    sublabel: '64 Units',
     desc: 'Reduces temporal dimension by averaging LSTM outputs across the sequence length',
-    color: 'cyan',
+    color: 'indigo',
     nodes: 3,
-    nodeColor: 'bg-cyan-300',
+    nodeColor: 'bg-indigo-300',
     width: 'w-44',
   },
   {
-    label: 'BATCH NORM.',
-    sublabel: 'Normalization',
+    label: 'BiLSTM LAYER.',
+    sublabel: '32 Units',
     desc: 'Stabilizes training by normalizing activations, enabling faster convergence and stable gradients',
     color: 'indigo',
     nodes: 3,
@@ -48,8 +48,8 @@ const layers = [
     width: 'w-44',
   },
   {
-    label: 'FC LAYER',
-    sublabel: '64 Units',
+    label: 'ATTENTION LAYER',
+    sublabel: 'Softmax Weights',
     desc: 'Fully connected dense layer that learns high-level representations from pooled LSTM features',
     color: 'cyan',
     nodes: 4,
@@ -57,8 +57,8 @@ const layers = [
     width: 'w-40',
   },
   {
-    label: 'DROPOUT',
-    sublabel: 'Rate: 0.5',
+    label: 'DENSE LAYER',
+    sublabel: '64 Units',
     desc: 'Second regularization layer applied before final output classification',
     color: 'slate',
     nodes: 3,
@@ -67,7 +67,7 @@ const layers = [
   },
   {
     label: 'OUTPUT LAYER',
-    sublabel: 'Binary Classification',
+    sublabel: 'Sigmoid',
     desc: 'Sigmoid activation producing probability of cybersickness — 0: Not Sick, 1: Sick',
     color: 'green',
     nodes: 1,
@@ -103,7 +103,7 @@ export default function Architecture() {
             Model <span className="gradient-text">Architecture</span>
           </h2>
           <p className="text-slate-400 mt-4 max-w-xl mx-auto text-sm sm:text-base">
-            A sequential LSTM-based neural network designed to capture temporal patterns in eye biometric data.
+            A sequential BiLSTM-Attention network designed to capture temporal patterns in eye biometric data.
           </p>
           <div className="w-16 h-px bg-gradient-to-r from-transparent via-cyan-400 to-transparent mx-auto mt-6" />
         </motion.div>

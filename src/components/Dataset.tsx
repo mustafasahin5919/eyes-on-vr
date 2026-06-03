@@ -2,9 +2,9 @@ import { motion } from 'framer-motion';
 import { Users, Database, Eye, Layers, Cpu, Activity } from 'lucide-react';
 
 const stats = [
-  { icon: Users, value: '30+', label: 'Participants', desc: 'Diverse subject pool across age groups', color: 'cyan' },
-  { icon: Layers, value: '4', label: 'VR Environments', desc: 'Distinct "Coaster" scenario scenes', color: 'indigo' },
-  { icon: Eye, value: '24', label: 'Eye Features', desc: 'Biometric input feature dimensions', color: 'cyan' },
+  { icon: Users, value: '18', label: 'Participants', desc: 'Diverse subject pool across age groups', color: 'cyan' },
+  { icon: Layers, value: '4', label: 'VR Scenes', desc: 'Distinct "Coaster" scenes', color: 'indigo' },
+  { icon: Eye, value: '73', label: 'Features', desc: 'Biometric input feature dimensions', color: 'cyan' },
   { icon: Database, value: '117K+', label: 'Data Samples', desc: 'Labeled time-series observations', color: 'indigo' },
   { icon: Cpu, value: '2', label: 'Model Types', desc: 'Classification & Regression models', color: 'cyan' },
   { icon: Activity, value: '2', label: 'Key Biometrics', desc: 'Pupil size & optical flow features', color: 'indigo' },

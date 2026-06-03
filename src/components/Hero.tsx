@@ -31,7 +31,7 @@ export default function Hero() {
           className="inline-flex items-center gap-2 px-4 py-2 mb-8 rounded-full glass border border-cyan-500/20 text-xs font-medium text-cyan-400 tracking-widest uppercase"
         >
           <span className="w-1.5 h-1.5 rounded-full bg-cyan-400 animate-pulse" />
-          Academic Research Project
+          Graduation Project
         </motion.div>
 
         {/* Main headline */}

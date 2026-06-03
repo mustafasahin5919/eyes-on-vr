@@ -24,7 +24,7 @@ const steps = [
     number: '03',
     title: 'Feature Engineering',
     subtitle: 'Statistical and behavioral features extracted from data',
-    desc: 'Twenty-four discriminative features were engineered from raw signals — including pupil size statistics, blink frequency, saccade velocity, and optical flow magnitude metrics.',
+    desc: '623 discriminative features were engineered from raw signals, including pupil size statistics, blink frequency, saccade velocity, and optical flow magnitude metrics.',
     color: 'cyan',
   },
   {
@@ -32,7 +32,7 @@ const steps = [
     number: '04',
     title: 'Model Training',
     subtitle: 'Deep Learning model trained with clean data',
-    desc: 'An LSTM-based sequential model was trained on windowed time-series data, leveraging the temporal dynamics of eye movement patterns to predict cybersickness onset.',
+    desc: 'An BiLSTM-Attention-based sequential model was trained on windowed time-series data, leveraging the temporal dynamics of eye movement patterns to predict cybersickness onset.',
     color: 'indigo',
   },
   {

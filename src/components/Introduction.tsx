@@ -75,7 +75,7 @@ export default function Introduction() {
             icon={<Brain size={22} className="text-cyan-400" />}
             number="01"
             title="Introduction"
-            body="Virtual reality (VR) environments deliver immersive experiences by stimulating visual, vestibular, and proprioceptive systems. However, a substantial number of users experience cybersickness when using VR. Cybersickness can result in nausea, headaches, and dizziness — adverse effects that hinder wide adoption of VR systems and degrade user experience. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore."
+            body="Virtual reality (VR) environments deliver immersive experiences by stimulating visual, vestibular, and proprioceptive systems. However, a substantial number of users experience cybersickness when using VR. Cybersickness can result in nausea, headaches, and dizziness. Traditional diagnostic methods rely on subjective post-session questionnaires, such as the Simulator Sickness Questionnaire (SSQ). While useful for static evaluation, these methods cannot track the temporal onset of distress or enable adaptive mitigation during a VR session."
             delay={0}
           />
           <GlassCard
@@ -96,7 +96,7 @@ export default function Introduction() {
           className="mt-8 glass rounded-2xl p-6 border-l-2 border-cyan-400"
         >
           <p className="text-slate-300 text-sm sm:text-base leading-relaxed text-center sm:text-left">
-            <span className="text-cyan-400 font-semibold">Abstract:</span> This study presents a proactive, AI-driven approach to predicting cybersickness in virtual reality by leveraging integrated eye-tracking biometrics and sequential LSTM networks to accurately identify patterns of user discomfort. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+            <span className="text-cyan-400 font-semibold">Abstract:</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
           </p>
         </motion.div>
       </div>
