@@ -40,7 +40,7 @@ const steps = [
     number: '05',
     title: 'Prediction',
     subtitle: 'Predict Cybersickness level of user',
-    desc: 'The trained model outputs binary classification (sick/not sick) and continuous regression scores, enabling real-time monitoring and proactive VR experience adaptation.',
+    desc: 'The trained model outputs binary classification (sick/not sick) labels, enabling real-time monitoring and proactive VR experience adaptation.',
     color: 'cyan',
   },
 ];

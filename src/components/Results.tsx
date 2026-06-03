@@ -175,44 +175,7 @@ export default function Results() {
           </div>
         </motion.div>
 
-        {/* Regression */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.2 }}
-          transition={{ duration: 0.6, delay: 0.2 }}
-        >
-          <div className="flex items-center gap-3 mb-6">
-            <div className="h-px flex-1 bg-gradient-to-r from-transparent to-indigo-500/30" />
-            <span className="text-xs text-indigo-400 uppercase tracking-widest font-bold px-4 glass py-2 rounded-full border border-indigo-500/20">
-              Regression
-            </span>
-            <div className="h-px flex-1 bg-gradient-to-l from-transparent to-indigo-500/30" />
-          </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-            {/* Regression stats */}
-            <div className="glass rounded-2xl p-6 border border-white/5">
-              <h3 className="text-slate-300 text-sm font-medium mb-6 text-center">Model Performance on Test Set (S5: Global Baseline)</h3>
-              <div className="grid grid-cols-3 gap-4">
-                <StatBadge label="MSE" value="0.0260" color="border-indigo-500/20" />
-                <StatBadge label="MAE" value="0.0780" color="border-indigo-500/20" />
-                <StatBadge label="RMSE" value="0.1611" color="border-indigo-500/20" />
-              </div>
-              <div className="mt-6 pt-4 border-t border-white/5">
-                <p className="text-slate-400 text-xs leading-relaxed text-center">
-                  Low MSE and MAE indicate that the regression model closely approximates actual continuous cybersickness scores, with RMSE of 0.1611 demonstrating strong predictive precision on the global baseline split.
-                </p>
-              </div>
-            </div>
-
-            {/* Regression chart placeholder */}
-            <div className="glass rounded-2xl p-6 border border-white/5">
-              <h3 className="text-slate-300 text-sm font-medium mb-4">Actual vs Predicted — First 10,000 Samples</h3>
-              <RegressionChart />
-            </div>
-          </div>
-        </motion.div>
 
         {/* Footer note */}
         <motion.div

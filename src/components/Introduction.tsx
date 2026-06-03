@@ -88,7 +88,7 @@ export default function Introduction() {
         </div>
 
         {/* Abstract highlight bar */}
-        <motion.div
+{/*         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.4 }}
@@ -98,7 +98,7 @@ export default function Introduction() {
           <p className="text-slate-300 text-sm sm:text-base leading-relaxed text-center sm:text-left">
             <span className="text-cyan-400 font-semibold">Abstract:</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
           </p>
-        </motion.div>
+        </motion.div> */}
       </div>
     </section>
   );

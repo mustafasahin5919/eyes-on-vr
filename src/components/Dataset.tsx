@@ -5,10 +5,10 @@ const stats = [
   { icon: Users, value: '18', label: 'Participants', desc: 'Diverse subject pool across age groups', color: 'cyan' },
   { icon: Layers, value: '4', label: 'VR Scenes', desc: 'Distinct "Coaster" scenes', color: 'indigo' },
   { icon: Eye, value: '73', label: 'Features', desc: 'Biometric input feature dimensions', color: 'cyan' },
-  { icon: Database, value: '117K+', label: 'Data Samples', desc: 'Labeled time-series observations', color: 'indigo' },
+/*   { icon: Database, value: '117K+', label: 'Data Samples', desc: 'Labeled time-series observations', color: 'indigo' },
   { icon: Cpu, value: '2', label: 'Model Types', desc: 'Classification & Regression models', color: 'cyan' },
   { icon: Activity, value: '2', label: 'Key Biometrics', desc: 'Pupil size & optical flow features', color: 'indigo' },
-];
+ */];
 
 const colorMap = {
   cyan: {
@@ -96,7 +96,7 @@ export default function Dataset() {
             <Database size={18} className="text-cyan-400" />
           </div>
           <p className="text-slate-400 text-sm leading-relaxed">
-            <span className="text-slate-200 font-medium">Data Processing:</span> Both classification and regression models were iteratively tested against these datasets to optimize predictive performance. Preprocessing involved several filters applied to signal data to reduce noise and artifacts from the HMD eye-tracking system.
+            <span className="text-slate-200 font-medium">Data Processing:</span> Classification model was iteratively tested against these datasets to optimize predictive performance. Preprocessing involved several filters applied to signal data to reduce noise and artifacts from the HMD eye-tracking system.
           </p>
         </motion.div>
       </div>
