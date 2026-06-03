@@ -14,7 +14,7 @@ const layers = [
   {
     label: 'CONV1D LAYER',
     sublabel: '64 Filters',
-    desc: 'Long Short-Term Memory cells capturing temporal dependencies in sequential eye movement data',
+    desc: 'Convolutional layer capturing temporal dependencies in sequential eye movement data',
     color: 'slate',
     nodes: 5,
     nodeColor: 'bg-slate-400',
@@ -23,7 +23,7 @@ const layers = [
   {
     label: 'CONV1D LAYER',
     sublabel: '64 Filters',
-    desc: 'Regularization layer preventing overfitting by randomly deactivating 50% of neurons during training',
+    desc: 'Convolutional layer capturing temporal dependencies in sequential eye movement data',
     color: 'slate',
     nodes: 3,
     nodeColor: 'bg-slate-400',
@@ -32,7 +32,7 @@ const layers = [
   {
     label: 'BiLSTM LAYER',
     sublabel: '64 Units',
-    desc: 'Reduces temporal dimension by averaging LSTM outputs across the sequence length',
+    desc: 'Long Short-Term Memory cells capturing temporal dependencies in sequential eye movement data',
     color: 'indigo',
     nodes: 3,
     nodeColor: 'bg-indigo-300',
@@ -41,7 +41,7 @@ const layers = [
   {
     label: 'BiLSTM LAYER.',
     sublabel: '32 Units',
-    desc: 'Stabilizes training by normalizing activations, enabling faster convergence and stable gradients',
+    desc: 'Long Short-Term Memory cells capturing temporal dependencies in sequential eye movement data',
     color: 'indigo',
     nodes: 3,
     nodeColor: 'bg-indigo-300',
@@ -50,7 +50,7 @@ const layers = [
   {
     label: 'ATTENTION LAYER',
     sublabel: 'Softmax Weights',
-    desc: 'Fully connected dense layer that learns high-level representations from pooled LSTM features',
+    desc: 'Attention layer that learns high-level representations from pooled LSTM features',
     color: 'cyan',
     nodes: 4,
     nodeColor: 'bg-cyan-400',
@@ -59,7 +59,7 @@ const layers = [
   {
     label: 'DENSE LAYER',
     sublabel: '64 Units',
-    desc: 'Second regularization layer applied before final output classification',
+    desc: 'Fully connected dense layer that learns high-level representations from pooled LSTM features',
     color: 'slate',
     nodes: 3,
     nodeColor: 'bg-slate-400',
